@@ -4,7 +4,7 @@ import java.util.List;
 public class Splitandtransverse {
     public static void main(String[] args) {
         int [] array = new int[] {24,12,25,36,48,20,54,88,98,100};
-        int k = 5;
+        int k = 3;
         Arrays.sort(array);
         System.out.println(Arrays.toString(array));
         List<Integer>List1 = new ArrayList<>();
