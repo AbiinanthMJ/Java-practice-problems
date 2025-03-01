@@ -1,5 +1,10 @@
 package Matrix;
 
+//      ________________________________________________________________________                                                                      |
+//     |  This is a mad way to rotate the 3x3 matrix please don't do thi       |
+//     |   I just used to play with this type of swapping method               |
+//      ------------------------------------------------------------------------
+
 public class mjmatrixrotation90 {
     public static void main(String[] args) {
         int[][] matrix = {{1, 2, 3},
@@ -11,8 +16,6 @@ public class mjmatrixrotation90 {
                System.out.println(num);
            }
         }
-
-//        this is a mad way to rotate the 3x3 matrix please don't do this
 //before reversing the corners of the 3x3 matrix
         for (int i = matrix.length-1; i >=0; i--) {
             for (int j = 0; j < matrix[0].length; j++) {
