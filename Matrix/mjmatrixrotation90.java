@@ -6,9 +6,28 @@ public class mjmatrixrotation90 {
                 {4, 5, 6},
                 {7, 8, 9}};
         int[][] resultmatrix = new int[3][3];
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
+        for(int nums[] : resultmatrix){
+           for( int num : nums){
+               System.out.println(num);
+           }
+        }
 
+//        this is a mad way to rotate the 3x3 matrix please don't do this
+//before reversing the corners of the 3x3 matrix
+        for (int i = matrix.length-1; i >=0; i--) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                resultmatrix[j][i]=matrix[i][j];
+            }
+        }
+//        after reversing the corners of the matrix by swapping method
+        for (int i = 0; i < resultmatrix.length; i++) {
+            int left = 0, right = resultmatrix[i].length - 1;
+            while (left < right) {
+                int temp = resultmatrix[i][left];
+                resultmatrix[i][left] = resultmatrix[i][right];
+                resultmatrix[i][right] = temp;
+                left++;
+                right--;
             }
         }
 //        To print the output with correct indentation
@@ -21,7 +40,11 @@ public class mjmatrixrotation90 {
             if(i==matrix.length-1){System.out.println(" }");}
             System.out.println();
         }
-
+        for(int nums[] : resultmatrix){
+            for( int num : nums){
+                System.out.println(num);
+            }
+        }
 
     }
 }
