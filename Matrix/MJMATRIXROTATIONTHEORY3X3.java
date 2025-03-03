@@ -1,5 +1,10 @@
 package Matrix;
 
+//      ________________________________________________________________________                                                                      |
+//     |  This is a mad way to rotate the 3x3 matrix please don't do thi       |
+//     |   I just used to play with this type of swapping method               |
+//      ------------------------------------------------------------------------
+
 public class mjmatrixrotationtheory3x3 {
     public static void main(String[] args) {
         int[][] matrix = {{1, 2, 3},
