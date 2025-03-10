@@ -1,7 +1,7 @@
 package problems;
-
 public class cross {
     public static void main(String[] args) {
+
                       int count=0;
                       int size=6;
                   int arm2count=1;
