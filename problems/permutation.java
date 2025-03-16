@@ -41,11 +41,11 @@ public class permutation {
             int size = end-start+1;
             end++;
             if(size<=s1.length()){
-                return true;
+//                return true;
             }
 
         }
-        return false;
+//        return false;
 
 
     }
