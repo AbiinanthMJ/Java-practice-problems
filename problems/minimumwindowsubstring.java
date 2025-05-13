@@ -28,18 +28,14 @@ public class minimumwindowsubstring {
         }
         int keycount=0;
         int start =0;
-        int end=t.length()-1;
-        while(end<s.length()){
-          char currentchar = s.charAt(start);
-          if(tcharcount.containsKey(start)&&scharcount.containsKey(start)){
-//              storing.put(keycount,new ArrayList<>().add(s.charAt(start)));
-              keycount++;
-             end++;
-          }
+        int end=0;
 
-             end++;
-             start=end;
+        while (start < s.length() && end < s.length()) {
+            char currentchar = s.charAt(start);
+
+
         }
+
 
     }
 }

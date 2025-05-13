@@ -20,5 +20,7 @@ public class trappingrainwater {
        for(int i=0;i<array.length;i++){
            watercount += Math.min(left[i], right[i]) - array[i];
        }
+        System.out.println(Arrays.toString(left));
+        System.out.println(Arrays.toString(right));
     }
 }

@@ -10,8 +10,7 @@ class debitcardpayment implements paymentmethod{
 }
 class creditcardpayment implements paymentmethod{
     @Override
-    public void pay() {
-        System.out.println("This is a creditcardpaymtn");
+    public void pay() {System.out.println("This is a creditcardpaymtn");
     }
 }
 class UPIcardpayment implements paymentmethod{

@@ -1,0 +1,3 @@
+1,the tail.next=n; says that the next in the head node points on the address of the next node so the link between them is created
+2,Node is actually used to store address data
+3,n the obj we created is actually the address
