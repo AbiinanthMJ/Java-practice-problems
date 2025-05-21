@@ -38,6 +38,13 @@ public class D6Recursion {
          backtracking2(n1+1,n2);
          System.out.println(n1-n2);
     }
+    void backtracking3(int n,int sum){
+        if(n<1){
+            System.out.println(sum);
+            return;
+        }
+        backtracking3(n-1,sum+n);
+    }
 //    We did it Boi
     public static void main(String[] args) {
         D6Recursion obj = new D6Recursion();
@@ -47,7 +54,8 @@ public class D6Recursion {
 //        obj.fun2(1);
 //        obj.fun3(1,n);
 //          obj.backtracking(n,n);
-        obj.backtracking2(n, n);
+//        obj.backtracking2(n, n);
+        obj.backtracking3(n,0);
 
     }
 }
