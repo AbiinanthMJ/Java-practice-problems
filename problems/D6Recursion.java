@@ -45,17 +45,47 @@ public class D6Recursion {
         }
         backtracking3(n-1,sum+n);
     }
+    void reverseinteger(int l , int r ,int[] array){
+        if(l>=r){
+            return;
+        }
+        int temp = array[l];
+        array[l]=array[r];
+        array[r]=temp;
+        reverseinteger(l+1,r-1,array);
+        for(int num:array){
+            System.out.print(num);
+        }
+        System.out.println();
+    }
+    void palindrome(int l, int r,String s ){
+        if (l>=r){
+            System.out.println(true);
+            return;
+        }
+       else if(s.charAt(l)==s.charAt(r)){
+            palindrome(l+1,r-1,s);
+        }
+        else{
+            System.out.println(false);
+            return;
+        }
+    }
 //    We did it Boi
     public static void main(String[] args) {
         D6Recursion obj = new D6Recursion();
         Scanner s = new Scanner(System.in);
-        int n = s.nextInt();
+//        int n = s.nextInt();
 //        obj.fun(1,n);
 //        obj.fun2(1);
 //        obj.fun3(1,n);
 //          obj.backtracking(n,n);
 //        obj.backtracking2(n, n);
-        obj.backtracking3(n,0);
+//        obj.backtracking3(n,0);
+//        int[] array = {1,3,4,5,1};
+//        String ss="madam";
+//       obj.reverseinteger(0,array.length-1,array);
+//        obj.palindrome(0,ss.length()-1,ss);
 
     }
 }
