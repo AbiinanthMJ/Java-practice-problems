@@ -25,6 +25,9 @@ public  class dsastudy{
     public static void main(String[] args) {
 //        but by using the interface method we can use a new style of using classes
 //        paymentmethod is the interface and the creditcard is the constructor
+//        this is the interface and the class which implements the interface though that i am creating a obj and then im passing it to a makepayment method
+//        it is clear that interface has the template to thr work we are doing and in which we can create the methods for different uses
+
         paymentmethod pm = new creditcardpayment();
         makepayment(pm);
         //this is the normal way of creating a object and implementing it inside another class

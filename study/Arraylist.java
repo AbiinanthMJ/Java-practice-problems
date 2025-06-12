@@ -2,7 +2,7 @@ package study;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-public class Arraylist {
+public class Arraylist<I extends Number> {
 //   i am going to take a break i am tried so badly tommorow i will start linked list
    public static void main(String[] args) {
       List arr = new ArrayList<>();
