@@ -1,4 +1,5 @@
 package problems;
+
 class TrieNode {
     TrieNode[] letters = new TrieNode[26];
     boolean isWord = false;

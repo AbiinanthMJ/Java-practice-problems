@@ -1,20 +1,19 @@
-package DP;
+package study;
 
 class one {
     int n1;
     int n2;
-
+    one next;
     one(int n1, int n2) {
         this.n1 = n1;
         this.n2 = n2;
     }
-
     int add() {
         return n1 + n2;
     }
 }
 
-public class D36prep {
+public class Actualnodeconcept {
     public static void main(String[] args) {
         one first = null, second = null, third = null, four = null;
         for (int i = 0; i < 5; i++) {

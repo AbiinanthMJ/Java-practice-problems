@@ -1,6 +1,7 @@
 package problems;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
@@ -9,7 +10,7 @@ public class D36 {
         String s = "abcdefghijk";
         int k = 3;
         char fill = 'k';
-        List<String> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
         int indexcount=0;
         for(int i = 0; i < s.length(); i+=k) {
             if (i + k <= s.length()) {

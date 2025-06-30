@@ -18,12 +18,12 @@ public class linkedlistpractice {
             tail=newnode;
         }
     }
-    void insertAtBeginning(int data){
-         node temp = new node();
-         temp.data=data;
-         temp.next=head;
-         head=temp;
-    }
+//    void insertAtBeginning(int data){
+//         node temp = new node();
+//         temp.data=data;
+//         temp.next=head;
+//         head=temp;
+//    }
      void insertAtPosition(int pos, int data){
          node currentinsrt = new node();
          int idx=0;
@@ -63,7 +63,7 @@ public class linkedlistpractice {
         for(int i=0;i<5;i++){
             linkedlist.insert(i);
         }
-        linkedlist.insertAtBeginning(10);
+//        linkedlist.insertAtBeginning(10);
         linkedlist.display();
     }
 }

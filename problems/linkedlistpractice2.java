@@ -2,8 +2,9 @@ package problems;
 class nodde{
     int data;
     nodde nextnodeaddress;
+
 }
-public class linkedlistpractice2 {
+public class    linkedlistpractice2 {
     nodde head,tail;
     void insert(int data){
         nodde newnode = new nodde();
