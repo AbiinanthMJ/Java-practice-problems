@@ -21,7 +21,6 @@ public class Actualnodeconcept {
                 first = new one(i, i + 1);
             } else if (i == 1) {
                 second = new one(i, i + 1);
-//                second=first;
             } else if (i == 2) {
                 third = new one(i, i + 1);
             } else if (i == 3) {
