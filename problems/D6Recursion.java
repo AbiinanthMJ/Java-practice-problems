@@ -1,5 +1,7 @@
 package problems;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class D6Recursion {
@@ -71,10 +73,46 @@ public class D6Recursion {
             return;
         }
     }
+    //power set is required
+    void sequence(int idx ,int[] arr ,ArrayList<Integer> list ,int n ,ArrayList<ArrayList<Integer>> list2,int[]itidx){
+        if(idx==n){
+                for(int t:list){
+                    list2.get(itidx[0]).add(t);
+                }
+                itidx[0]++;
+            return;
+        }
+        list.add(arr[idx]);
+        sequence(idx+1,arr,list,n,list2,itidx);
+        list.remove(list.size()-1);
+        sequence(idx+1,arr,list,n,list2,itidx);
+
+    }
 //    We did it Boi
     public static void main(String[] args) {
         D6Recursion obj = new D6Recursion();
         Scanner s = new Scanner(System.in);
+        int[] arr={3,1,2};
+        int n =arr.length;
+        ArrayList<Integer>list= new ArrayList<>();
+        ArrayList<ArrayList<Integer>> list2= new ArrayList<>();
+        int count=(int)Math.pow(2,n);
+        for (int i = 0; i < count; i++) {
+            list2.add(new ArrayList<>());
+        }
+        int[] counter={0};
+        obj.sequence(0,arr,list,n,list2,counter);
+        for (ArrayList<Integer> seq : list2) {
+            if (seq.isEmpty()) {
+                System.out.println("{}");
+            } else {
+                for (int val : seq) {
+                    System.out.println(val + " ");
+                }
+                System.out.println();
+            }
+        }
+
 //        int n = s.nextInt();
 //        obj.fun(1,n);
 //        obj.fun2(1);
