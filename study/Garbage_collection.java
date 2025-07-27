@@ -8,8 +8,8 @@ public class Garbage_collection {
     }
     public static void main(String[] args) {
         // --> The garbage collection in java works by using the mark and sweep from younger generation to the
-        // older generation heap -
-        /**
+        // older generation heap --->
+        /**-->
          The garbage collection in java is used to clean the unused objects that floats up in the memory
          This is bascically done by using the jvm itself we can also manually create a garbage collection
          **/
