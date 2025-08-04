@@ -1,7 +1,7 @@
 package oops.polymorphism;
 
 public class shapes {
-    void area(){
+     void area(){
         System.out.println("This is the parent function shapes");
     }
     void testing(){

@@ -23,15 +23,12 @@ class Binary{
     public void insertright(BNode root,int data){
         root.right= new BNode(data);
     }
-
 }
 public class Binarytree {
     public static void main(String[] args) {
         Binary bt = new Binary(1);
         bt.insertleft(bt.root,2);
         bt.insertright(bt.root,4);
-        System.out.println(bt.root);
-
     }
 }
 

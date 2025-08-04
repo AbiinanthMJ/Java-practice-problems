@@ -2,3 +2,80 @@
 2,Node is actually used to store address data
 3,n the obj we created is actually the address
 ---------------------------------DP-------------------------------------
+0,1,1,1,1,1,0,0,0
+0->
+1->
+maxlength=2
+Table and memomization methods in
+table is basically looping through array and where as bottom up is the method of recurison
+-------------Combination and permutation----------------------
+Combinators (combinations) deal with selection without order.
+
+Different from permutations (where order matters).
+
+search -> binary search --> o(log n )
+sorting ->  merge sort --> n(log n )
+freqcount  ->  HashMap --> o(1)
+maximal subarray -> kadane's algoritham --> O(n)
+maxtrix multi   -> strassins algoritham --> O(n^2.89)
+string pattern  -> Kmp algo  --> O(n+m)
+prefix sum
+Two pointer  approach
+Fast and slow pointer
+Hashing techique --> O(1)
+sliding window approach
+Segment Tree -> Very important  --> Applications
+
+
+
+
+-------------------------------Tree------------------------
+Binary tree is inefficient if there is sorted data or values
+where is it used ---?
+Files systems
+DataBases
+Network Routing
+Path finding algo
+complex Mathematical problems
+Decision Trees
+Huffman coding
+Future Datastructures
+Binary Heap
+
+
+
+
+
+PROPERTIES :
+Size of the tree --> No of nodes is called the size of  Tree or the max number of edges
+Right node and Left node are called --> Siblings
+edge --> It is the line thats been connected in
+Height --> it is the number of nodes thats been connected in between two nodes
+        --> Max no of edges from the node and the leaf node
+Leaf --> is the bottom nodes
+Level --> subtract height of root - height of node
+          height of root - height of node ==> 0
+Ancestor --> Starting to the node which we find the path and the node which we start is called Ancestor & descendant
+
+
+TYPES OF BINARY TREE :
+1,Complete binary tree -> All the levels are full apart from the last level and fill it from the left to right
+2,Full | strict binary tree  --> Each node has 0 or 2 children
+3,Perfect binary tree --> All levels are filled
+4,Height balanced binary tree -->O(log n )
+5, Skewed binary tree --> Evey binary tree has a single child this is like linked list
+6,Ordered binary tree --> Every node has a property
+
+
+PROPERTIES What will help you in some problems
+Perfect binary tree -> Total number of node ==> 2 ^ (n+1) -1
+leaf nodes in perfect binary tree ==>  (2 ^ n)     n-height
+Internal nodes inside the leaf node and the height or the root node  of the node is called --> Inside nodes => 2 ^ (n+1) -1- 2 ^ h
+No of levels --> log(n+1)
+no of leaf node in strict binary tree is N-1 | No of internal nodes + 1
+In a binary tree the when we insert two number the  internal nodes +1 & Leaf node +1 (They will increase in same order)
+No of Leaf node in a strict binary is equal to --> 1+ node of nodes two leaf nodes by excluding the root node
+
+Implementation :
+1, Linked representation
+2, sequential using array

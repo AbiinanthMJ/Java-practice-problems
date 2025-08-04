@@ -4,6 +4,7 @@ public class polymorphism {
       circle circle = new circle();
 //      circle.area();
         circle.testing();
+        circle.area();
 
     }
 }
