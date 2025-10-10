@@ -25,5 +25,8 @@ public class inheritancee {
         /** the refernence will be in the stack memory but the obj that is
          been created is stored in the heap memory
          the reference will always point to the heap memory the particular object okie**/
+
+         Box.information();
+         BoxWeight.information();
     }
 }

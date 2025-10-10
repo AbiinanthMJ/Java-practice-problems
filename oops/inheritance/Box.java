@@ -24,7 +24,7 @@ public class Box {
         this.h=old.h;
         this.l=old.l;
     }
-    public void information(){
+    public  static void information(){
         System.out.println("Running the box");
     }
 

@@ -38,22 +38,22 @@ import java.util.List;
 class Node {
     int data;
     Node next;
-
+    Node(int data){
+        this.data=data;
+        this.next=null;
+    }
 }
 
 class Linkedlist {
     Node head, tail;
-
     public void insert(int data) {
-        Node n = new Node();
-        n.data=data;
-        n.next=null;
+        Node newnode = new Node(data);// oru object create aguthu ;
         if (head == null) {
-            head = n;
-            tail = n;
+            head = newnode;
+            tail = newnode;
         } else {
-            tail.next = n;
-            tail = n;
+            tail.next = newnode;
+            tail = newnode;
         }
     }
 
@@ -64,51 +64,49 @@ class Linkedlist {
             temp = temp.next;
         }
     }
-    public void insertBeg(int data){
-        Node n = new Node();
-        n.data=data;
-        n.next=head;
-        head=n;
-    }
-    public void insertAtEnd(int data){
-        Node n = new Node();
-        n.data=data;
-        tail.next=n;
-        tail=n;
-    }
-    public void insertAtPos(int pos,int data){
-           Node n = new Node();
-           n.data=data;
-           Node temp =  head;
-           for(int i=0;i<pos-1;i++){
-               temp=temp.next;
-           }
-           n.next=temp.next;
-           temp.next=n;
-    }
-    public void deleteAtBeg(){
-//         Node temp=head;
-         head=head.next;
-//         temp.next=null;
-    }
+//    public void insertBeg(int data){
+//        BinarySearchTree n = new BinarySearchTree(data);
+//        head=n;
+//    }
+//    public void insertAtEnd(int data){
+//        BinarySearchTree n = new BinarySearchTree();
+//        n.data=data;
+//        tail.next=n;
+//        tail=n;
+//    }
+//    public void insertAtPos(int pos,int data){
+//           BinarySearchTree n = new BinarySearchTree();
+//           n.data=data;
+//           BinarySearchTree temp =  head;
+//           for(int i=0;i<pos-1;i++){
+//               temp=temp.next;
+//           }
+//           n.next=temp.next;
+//           temp.next=n;
+//    }
+//    public void deleteAtBeg(){
+////         BinarySearchTree temp=head;
+//         head=head.next;
+////         temp.next=null;
+//    }
 
-    public void deleteAtEnd(){
-        Node n = new Node();
-        Node temp = head;
-        while(temp.next!=tail){
-            temp=temp.next;
-        }
-        temp.next=null;
-        tail=temp;
-    }
-    public void deleteAtPos(int pos){
-        Node n = new Node();
-        Node temp=head;
-        for(int i=0;i<pos-1;i++){
-            temp=temp.next;
-        }
-        temp.next=temp.next.next;
-    }
+//    public void deleteAtEnd(){
+//        BinarySearchTree n = new BinarySearchTree();
+//        BinarySearchTree temp = head;
+//        while(temp.next!=tail){
+//            temp=temp.next;
+//        }
+//        temp.next=null;
+//        tail=temp;
+//    }
+//    public void deleteAtPos(int pos){
+//        BinarySearchTree n = new BinarySearchTree();
+//        BinarySearchTree temp=head;
+//        for(int i=0;i<pos-1;i++){
+//            temp=temp.next;
+//        }
+//        temp.next=temp.next.next;
+//    }
 }
 public class SingleLinkedList {
     public static void main(String[] args) {
@@ -122,5 +120,6 @@ public class SingleLinkedList {
 //        l.deleteAtBeg();
 //        l.deleteAtEnd();
 //        l.deleteAtPos(2);
+        l.Display();
     }
 }

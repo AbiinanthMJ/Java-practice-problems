@@ -1,10 +1,10 @@
 package problems;//// Java program for the above approach:
 //import java.util.*;
 //// Class to represent huffman tree
-//class Node {
+//class BinarySearchTree {
 //    int data;
-//    Node left, right;
-//    Node(int x) {
+//    BinarySearchTree left, right;
+//    BinarySearchTree(int x) {
 //        data = x;
 //        left = null;
 //        right = null;
@@ -15,7 +15,7 @@ package problems;//// Java program for the above approach:
 //    // Function to traverse tree in preorder
 //    // manner and push the huffman representation
 //    // of each character.
-//    static void preOrder(Node root, ArrayList<String> ans, String curr) {
+//    static void preOrder(BinarySearchTree root, ArrayList<String> ans, String curr) {
 //        if (root == null) return;
 //
 //        // Leaf node represents a character.
@@ -31,12 +31,12 @@ package problems;//// Java program for the above approach:
 //    static ArrayList<String> huffmanCodes(String s, int[] freq) {
 //        int n = s.length();
 //        // Min heap for node class.
-//        PriorityQueue<Node> pq = new PriorityQueue<>((a, b) -> {
+//        PriorityQueue<BinarySearchTree> pq = new PriorityQueue<>((a, b) -> {
 //            if (a.data < b.data) return -1;
 //            return 1;
 //        });
 //        for (int i = 0; i < n; i++) {
-//            Node tmp = new Node(freq[i]);
+//            BinarySearchTree tmp = new BinarySearchTree(freq[i]);
 //            pq.add(tmp);
 //        }
 //
@@ -44,19 +44,19 @@ package problems;//// Java program for the above approach:
 //        while (pq.size() >= 2) {
 //
 //            // Left node
-//            Node l = pq.poll();
+//            BinarySearchTree l = pq.poll();
 //
 //            // Right node
-//            Node r = pq.poll();
+//            BinarySearchTree r = pq.poll();
 //
-//            Node newNode = new Node(l.data + r.data);
+//            BinarySearchTree newNode = new BinarySearchTree(l.data + r.data);
 //            newNode.left = l;
 //            newNode.right = r;
 //
 //            pq.add(newNode);
 //        }
 //
-//        Node root = pq.poll();
+//        BinarySearchTree root = pq.poll();
 //        ArrayList<String> ans = new ArrayList<>();
 //        preOrder(root, ans, "");
 //        return ans;

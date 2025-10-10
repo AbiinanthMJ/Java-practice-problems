@@ -76,6 +76,6 @@ no of leaf node in strict binary tree is N-1 | No of internal nodes + 1
 In a binary tree the when we insert two number the  internal nodes +1 & Leaf node +1 (They will increase in same order)
 No of Leaf node in a strict binary is equal to --> 1+ node of nodes two leaf nodes by excluding the root node
 
-Implementation :
+study.Implementation :
 1, Linked representation
 2, sequential using array

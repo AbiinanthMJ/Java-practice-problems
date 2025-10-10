@@ -1,11 +1,28 @@
 package study;
 interface paymentmethod{
     void pay();
+    interface  typeofcard{
+        void messageone();
+        void messagetwo();
+    }
 }
-class debitcardpayment implements paymentmethod{
+class debitcardpayment implements paymentmethod {
     @Override
     public void pay() {
         System.out.println("This is a debitcardpaymtn");
+    }
+
+
+}
+class classfortypeofcards implements paymentmethod.typeofcard{
+    @Override
+    public void messageone() {
+        System.out.println("This is of type card SBI BANK");
+    }
+
+    @Override
+    public void messagetwo() {
+        System.out.println("This is of type card INDIAN BANK");
     }
 }
 class creditcardpayment implements paymentmethod{
@@ -28,8 +45,12 @@ public  class dsastudy{
 //        this is the interface and the class which implements the interface though that i am creating a obj and then im passing it to a makepayment method
 //        it is clear that interface has the template to thr work we are doing and in which we can create the methods for different uses
 
-        paymentmethod pm = new creditcardpayment();
-        makepayment(pm);
+        paymentmethod pm = new debitcardpayment();
+        paymentmethod.typeofcard typeofcardsavailableforpayment = new classfortypeofcards();
+        typeofcardsavailableforpayment.messageone();
+        typeofcardsavailableforpayment.messagetwo();
+//        makepayment(pm);
+        pm.pay();
         //this is the normal way of creating a object and implementing it inside another class
 //        debitcardpayment dc = new debitcardpayment();
 //        dc.pay();

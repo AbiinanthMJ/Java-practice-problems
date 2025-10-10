@@ -8,4 +8,7 @@ public class BoxWeight extends Box {
         //so the inilisation should be available in this two okie
         this.weight=weight;
     }
+    public static void information(){
+        System.out.println("hello from the child boxweight");
+    }
 }

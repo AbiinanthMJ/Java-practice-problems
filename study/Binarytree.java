@@ -1,6 +1,9 @@
 package study;
+
+import java.util.Stack;
+
 // Take aways-----------
-//...means that the current node will have references to two other Node objects
+//...means that the current node will have references to two other BinarySearchTree objects
 // — one on the left and one on the right (as in a binary tree structure).
 class BNode{
     BNode(int data){
@@ -10,7 +13,6 @@ class BNode{
 //     Self-Referential Class
     BNode left;
     BNode right;
-
 }
 class Binary{
     BNode root;

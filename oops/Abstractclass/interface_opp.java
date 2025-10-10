@@ -13,7 +13,7 @@ super key word calls the constructor of the parent class
  **/
 public class interface_opp {
     public static void main(String[] args) {
-        son son = new son(20);
+        Parent son = new Daughter(20);
         son.career("Doctor",20);
         son.partner("Ashmi",20);
         Daughter daughter = new Daughter(20);

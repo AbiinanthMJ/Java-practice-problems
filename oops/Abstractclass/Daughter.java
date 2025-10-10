@@ -10,11 +10,11 @@ public class Daughter extends Parent{
     }
     @Override
     void career(String name, int age) {
-        System.out.println(" I will become a "+name);
+        System.out.println(" I will become a "+name+"from the Daugher abstract class");
     }
 
     @Override
     void partner(String name, int age) {
-        System.out.println("I love "+name+"he is "+age);
+        System.out.println("I love "+name+"he is "+age+"from the Daugher abstract class");
     }
 }
