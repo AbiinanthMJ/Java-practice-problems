@@ -21,16 +21,15 @@ public class LambdaFunctions {
         Operation sum = (a, b) -> a + b;
         Operation prod = (a, b) -> a * b;
         Operation sub = (a, b) -> a - b;
-
         LambdaFunctions myCalculator = new LambdaFunctions();
         System.out.println(myCalculator.operate(5, 3, sum));
         System.out.println(myCalculator.operate(5, 3, prod));
         System.out.println(myCalculator.operate(5, 3, sub));
-
         suma o = s -> System.out.println("hello this is me " + s);
+        suma s = b -> System.out.println("this is me from new interface"+b);
+        s.message("Hello this is me abiinanth");
         o.message("Abi");
     }
-
     private int operate(int a, int b, Operation op) {
         return op.operation(a, b);
     }

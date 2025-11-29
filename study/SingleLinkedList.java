@@ -43,7 +43,6 @@ class Node {
         this.next=null;
     }
 }
-
 class Linkedlist {
     Node head, tail;
     public void insert(int data) {

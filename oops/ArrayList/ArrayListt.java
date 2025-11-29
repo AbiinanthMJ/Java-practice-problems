@@ -2,12 +2,12 @@ package oops.ArrayList;
 
 import java.util.Arrays;
 
-public class ArrayList<T> {
+public class  ArrayListt<T> {
     private Object[] AOD;     // Use Object[] since Java doesn't allow generic array creation
     private static int DEFAULT_SIZE = 10;
     private int size = 0;
 
-    public ArrayList() {
+    public ArrayListt() {
         this.AOD = new Object[DEFAULT_SIZE];
     }
 
@@ -32,7 +32,6 @@ public class ArrayList<T> {
         checkIndex(index);
         AOD[index] = value;
     }
-
     // Get value at index
     public T get(int index) {
         checkIndex(index);
@@ -49,7 +48,7 @@ public class ArrayList<T> {
         DEFAULT_SIZE = DEFAULT_SIZE * 2;
     }
 
-    public int size() {
+    private int size() {
         return this.size;
     }
 
