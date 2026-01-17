@@ -10,5 +10,5 @@ public abstract class Parent<T> {
         System.out.println("This is the n from the parent " + this.age);
     }
     abstract void rulesofparenting();
-
 }
+

@@ -4,7 +4,7 @@ class graph{
     ArrayList<ArrayList<Integer>> list = new ArrayList<>();
     graph(int v){
       for(int i=0;i<v;i++){
-          list.add(new ArrayList<Integer>());
+          list.add(new ArrayList<>());
       }
     }
     public void addedge(int u,int v){

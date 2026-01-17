@@ -13,10 +13,6 @@ public class RotationOfArray {
             nums[i] = nums[rn + i];
             nums[rn + i] = temp;
         }
-        int kn = rn-k;
-        for(int i=k;i<rn-k;k++){
-            
-        }
         System.out.println(Arrays.toString(nums));
     }
 }

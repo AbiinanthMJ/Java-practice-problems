@@ -1,6 +1,7 @@
 package LTIOOPS.Singleton;
 
-public class MyinterfaceCalculator {
+public class MyinterfaceCalculator{
+    Operation add = (a,b) -> a + b;
     Operation sub = (a,b) -> a - b;
     Operation mul = (a,b) -> a * b;
     Operation division = (a,b) -> a / b;

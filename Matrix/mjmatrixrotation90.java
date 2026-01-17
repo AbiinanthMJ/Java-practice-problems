@@ -47,6 +47,7 @@ public class mjmatrixrotation90 {
             for( int num : nums){
                 System.out.println(num);
             }
+            System.out.println();
         }
 
     }

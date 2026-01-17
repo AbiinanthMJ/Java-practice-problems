@@ -40,6 +40,7 @@ public class  ArrayListt<T> {
 
     // Resize when full
     private void resize() {
+
         Object[] tempArray = new Object[AOD.length * 2];
         for (int i = 0; i < AOD.length; i++) {
             tempArray[i] = AOD[i];

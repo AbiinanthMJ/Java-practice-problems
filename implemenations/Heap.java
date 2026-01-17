@@ -89,8 +89,6 @@ public class Heap<T extends Comparable<T>> {
     public void printHeap() {
         System.out.println(list);
     }
-
-    // ✅ quick test
     public static void main(String[] args) {
         Heap<Integer> heap = new Heap<>();
         heap.insert(7);
